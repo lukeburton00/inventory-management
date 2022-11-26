@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="630.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartForm">
+    <children>
+        <Label layoutX="104.0" layoutY="106.0" text="Modify Part">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="inHouse" layoutX="206.0" layoutY="106.0" mnemonicParsing="false" onAction="#onInHouse" selected="true" text="In-House">
+            <toggleGroup>
+                <ToggleGroup fx:id="radioGroup" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="outSourced" layoutX="341.0" layoutY="106.0" mnemonicParsing="false" onAction="#onOutSourced" text="Outsourced" toggleGroup="$radioGroup" />
+        <Label layoutX="126.0" layoutY="161.0" text="ID" />
+        <Label layoutX="126.0" layoutY="204.0" text="Name" />
+        <Label layoutX="126.0" layoutY="245.0" text="Inv" />
+        <Label layoutX="126.0" layoutY="290.0" text="Price/Cost" />
+        <Label layoutX="126.0" layoutY="335.0" text="Max" />
+        <Label fx:id="machineLabel" layoutX="126.0" layoutY="383.0" text="MachineId" />
+        <TextField fx:id="idText" disable="true" layoutX="202.0" layoutY="157.0" text="Auto Gen - Disabled" />
+        <TextField fx:id="nameText" layoutX="202.0" layoutY="200.0" />
+        <TextField fx:id="inventoryText" layoutX="202.0" layoutY="241.0" />
+        <TextField fx:id="priceText" layoutX="202.0" layoutY="286.0" />
+        <TextField fx:id="maxText" layoutX="202.0" layoutY="331.0" />
+        <TextField fx:id="machineText" layoutX="202.0" layoutY="379.0" />
+        <Label layoutX="383.0" layoutY="335.0" text="Min" />
+        <TextField fx:id="minText" layoutX="451.0" layoutY="332.0" />
+        <Button fx:id="save" layoutX="394.0" layoutY="470.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+        <Button fx:id="cancel" layoutX="459.0" layoutY="470.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+    </children>
+</AnchorPane>
